@@ -1,0 +1,41 @@
+.app__skills {
+  // width: 50rem;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  .app__skills-head {
+  }
+
+  .app__skills-logos {
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+    margin: auto;
+    max-width: 25rem;
+    min-width: 17rem;
+
+    .app__skills-logo {
+      width: 25%;
+      // height: 10rem;
+      max-width: 6rem;
+      // background-color: rgb(217, 217, 217);
+
+      .img-div {
+        // width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        // background-color: rgb(217, 217, 217);
+        padding: 5px;
+        // width: 100%;
+
+        img {
+          // width: 60px;
+          width: 100%;
+          // box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.46);
+          // height: 80px;
+          // border-radius: 50%;
+        }
+      }
+    }
+  }
+}
