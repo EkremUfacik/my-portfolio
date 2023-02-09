@@ -9,28 +9,29 @@
   .app__skills-logos {
     flex-wrap: wrap;
     gap: 2rem;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    max-width: 25rem;
-    min-width: 17rem;
+    max-width: 45rem;
+    min-width: 25rem;
 
     .app__skills-logo {
-      width: 25%;
+      width: 20%;
       // height: 10rem;
       max-width: 6rem;
+      min-width: 5rem;
       // background-color: rgb(217, 217, 217);
 
       .img-div {
         // width: 5rem;
         height: 5rem;
-        border-radius: 50%;
-        // background-color: rgb(217, 217, 217);
+        border-radius: 10px;
+        // background-color: rgb(245, 234, 234);
         padding: 5px;
         // width: 100%;
 
         img {
           // width: 60px;
-          width: 100%;
+          width: 90%;
           // box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.46);
           // height: 80px;
           // border-radius: 50%;

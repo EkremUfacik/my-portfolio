@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Projects.scss";
 import { motion, useScroll, useSpring } from "framer-motion";
+import projectsImg from "../../assets/projectsImg/projects";
+import Project from "../../components/Project";
 
 const Projects = () => {
   let outer = useRef();
@@ -19,16 +21,15 @@ const Projects = () => {
         dragConstraints={{ right: 0, left: -width }}
         whileTap={{ cursor: "grabbing" }}
       >
-        {Array(15)
-          .fill(0)
-          .map((item) => (
-            <div className="project"></div>
-          ))}
+        {projectsImg.map((project) => (
+          <Project project={project} />
+          // <div className="project"></div>
+        ))}
       </motion.div>
 
       <br />
 
-      <motion.div
+      {/* <motion.div
         className="app__projects-contain"
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
@@ -39,7 +40,7 @@ const Projects = () => {
           .map((item) => (
             <div className="project"></div>
           ))}
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };
