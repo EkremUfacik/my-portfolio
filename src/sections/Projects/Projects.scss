@@ -1,5 +1,9 @@
 .app__projects {
   overflow-x: hidden;
+  margin: 0 1rem;
+  // border-left: 3px solid rgba(0, 0, 0, 0.441);
+  box-shadow: inset 15px 0 black, inset -15px 0 black;
+
   //   user-select: none;
   cursor: pointer;
   //   transition: all 0.2s;
@@ -8,6 +12,7 @@
   .app__projects-contain {
     display: flex;
     gap: 1rem;
+
     // overflow-x: scroll;
 
     .project {
@@ -15,14 +20,44 @@
       // height: 20rem;
       // min-width: 35rem;
       // background-color: rgb(231, 231, 231);
+      position: relative;
       .project-img {
         width: 40vw;
         // height: 100%;
         min-width: 30rem;
-        height: 27rem;
+        height: 18rem;
+        // background-color: rgba(0, 0, 0, 0.092);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        // box-shadow: 10px 10px 5px 5px black;
+        transition: all 0.5s;
+        &:hover {
+          // opacity: 0.8;
+        }
+      }
+
+      // &::before {
+      //   content: url("../../assets/Re.png");
+      //   // content: "";
+      //   position: absolute;
+      //   // background-color: rgba(0, 0, 0, 0.515);
+      //   scale: 2;
+      //   bottom: 50%;
+      //   right: 50%;
+      //   transform: translate(-50%, -50%);
+      // }
+
+      .project-info {
+        text-align: center;
+
+        img {
+          width: 50px;
+          padding: 4px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.147);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.325);
+        }
       }
     }
   }
