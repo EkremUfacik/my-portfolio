@@ -4,6 +4,7 @@ import avatar from "../../assets/avatar.jpg";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   let navLinks = ["home", "about", "skills", "projects", "contact"];
@@ -19,12 +20,21 @@ const Navbar = () => {
       <ul className="app__navbar-links app__flex">
         {navLinks.map((item, index) => (
           <li
-            className={isActive === index ? "app__flex active" : "app_flex"}
+            className={"app_flex"}
             key={index}
-            onClick={() => setIsActive(index)}
+            // onClick={() => setIsActive(index)}
           >
-            <a href={`#${item}`}>{item}</a>
-            <div />
+            <Link
+              className="link"
+              to={item}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={400}
+            >
+              {item}
+              <div />
+            </Link>
           </li>
         ))}
       </ul>
@@ -32,9 +42,9 @@ const Navbar = () => {
       <div className="app__navbar-menu">
         <FiMenu size={"1.5rem"} onClick={() => setToggle(true)} />
 
-        <div style={{ right: toggle ? "0" : "-30rem" }}>
+        <div style={{ right: toggle ? "0" : "-100%" }}>
           <FiX onClick={() => setToggle(false)} />
-          <ul className="app__navbar-links app__flex">
+          <ul className="app__navbar-menu-links app__flex">
             {navLinks.map((item, index) => (
               <li key={index} onClick={() => setIsActive(index)}>
                 <a href={`#${item}`} onClick={() => setToggle(false)}>

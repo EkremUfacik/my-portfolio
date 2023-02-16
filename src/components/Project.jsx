@@ -6,7 +6,7 @@ import tslogo from "../assets/skillsImg/typescript.png";
 
 const Project = ({ project }) => {
   return (
-    <div className="project">
+    <div id="projects" className="project">
       {/* <img src={project.img} alt="" /> */}
       <div
         className="project-img"

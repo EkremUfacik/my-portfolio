@@ -1,10 +1,12 @@
 .app__projects {
+  margin: 1rem;
   overflow-x: hidden;
-  margin: 0 1rem;
-  // border-left: 3px solid rgba(0, 0, 0, 0.441);
-  box-shadow: inset 15px 0 black, inset -15px 0 black;
-
-  //   user-select: none;
+  padding-top: 10px;
+  border-left: 3px solid rgba(0, 0, 0, 0.653);
+  border-right: 3px solid rgba(0, 0, 0, 0.653);
+  box-shadow: inset 8px 0 0 0 rgba(0, 0, 0, 0.722),
+    inset -8px 0 0 0 rgba(0, 0, 0, 0.642);
+  user-select: none;
   cursor: pointer;
   //   transition: all 0.2s;
   //   transform: scale(0.98);
@@ -19,12 +21,12 @@
       // width: 50vw;
       // height: 20rem;
       // min-width: 35rem;
-      // background-color: rgb(231, 231, 231);
+      background-color: rgba(232, 232, 232, 0.796);
       position: relative;
       .project-img {
         width: 40vw;
         // height: 100%;
-        min-width: 30rem;
+        min-width: 25rem;
         height: 18rem;
         // background-color: rgba(0, 0, 0, 0.092);
         background-repeat: no-repeat;
@@ -55,7 +57,7 @@
           width: 50px;
           padding: 4px;
           border-radius: 50%;
-          background-color: rgba(255, 255, 255, 0.147);
+          background-color: rgba(255, 255, 255, 0.826);
           box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.325);
         }
       }

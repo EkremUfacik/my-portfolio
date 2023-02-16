@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 2;
   flex: 1;
+  justify-content: space-between;
   .app__navbar-logo {
     img {
       width: 50px;
@@ -15,7 +16,6 @@
   .app__navbar-links {
     flex: 1;
     gap: 2rem;
-    // list-style: none;
 
     li {
       flex-direction: column;
@@ -31,14 +31,20 @@
         background: transparent;
         // border-radius: 50%;
         margin-bottom: 5px;
-        transition: all 0.7s;
+        transition: all 0.8s;
       }
 
-      a {
+      .link {
         // text-decoration: none;
         text-transform: uppercase;
         color: black;
         font-weight: 500;
+      }
+
+      .active {
+        div {
+          background-color: rgb(61, 35, 138);
+        }
       }
 
       &:not(.active):hover {
@@ -47,10 +53,9 @@
         }
       }
     }
-    .active {
-      div {
-        background-color: rgb(61, 35, 138);
-      }
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 }
@@ -75,7 +80,7 @@
   }
 
   div {
-    transition: all 1s;
+    transition: all 1.5s;
     position: absolute;
     top: 0;
     // bottom: 0;
@@ -121,9 +126,9 @@
       flex-direction: column;
 
       li {
-        margin: 0.7rem;
+        margin: 1.2rem;
 
-        a {
+        .link {
           color: var(--gray-color);
           // text-decoration: none;
           font-size: 1rem;
@@ -135,16 +140,20 @@
           &:hover {
             color: var(--secondary-color);
           }
+
+          .active {
+            color: red;
+          }
         }
       }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
