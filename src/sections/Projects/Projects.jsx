@@ -7,14 +7,16 @@ import useWindowSize from "../../hooks/useWindowSize";
 
 const Projects = () => {
   let outer = useRef();
+  let out = useRef();
   const [key, setKey] = useState(0);
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
     function updateSize() {
-      setWidth(outer.current.scrollWidth - outer.current.offsetWidth);
+      setWidth(outer.current.scrollWidth - out.current.offsetWidth + 32);
       setKey((prev) => prev + 1);
     }
+    console.log(out);
     window.addEventListener("resize", updateSize);
     updateSize();
     return () => window.removeEventListener("resize", updateSize);
@@ -22,33 +24,40 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Projects</h1>
-      {/* <motion.div
-        style={{ padding: "1rem" }}
-        initial={{ marginLeft: "50%", marginRight: "50%" }}
-        whileInView={{ marginLeft: 0, marginRight: 0 }}
+      <h2 className="app__head" style={{ textAlign: "center" }}>
+        Projects
+      </h2>
+      <motion.div
+        ref={out}
+        // className="app__projects-outer"
+        initial={{ paddingLeft: "50%", paddingRight: "50%" }}
+        whileInView={{ paddingLeft: 0, paddingRight: 0 }}
         transition={{ duration: 0.7, ease: "easeInOut" }}
-      > */}
-      <motion.div key={key} ref={outer} className="app__projects">
+      >
         <motion.div
-          className="app__projects-contain"
-          // style={{ translateX: "-50rem" }}
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          whileTap={{ cursor: "grabbing" }}
-
-          // initial={{ width: 0 }}
-          // whileInView={{ scale: [0, 1] }}
+          key={key}
+          ref={outer}
+          className="app__projects"
+          // initial={{ margin: "10rem" }}
+          // whileInView={{ marginLeft: [500, 0], marginRight: [500, 0] }}
+          // transition={{ duration: 0.7, ease: "easeInOut" }}
         >
-          {projectsImg.map((project) => (
-            <Project project={project} />
-            // <div className="project"></div>
-          ))}
-        </motion.div>
+          <motion.div
+            className="app__projects-contain"
+            // style={{ translateX: "-50rem" }}
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            whileTap={{ cursor: "grabbing" }}
+          >
+            {projectsImg.map((project) => (
+              <Project project={project} />
+              // <div className="project"></div>
+            ))}
+          </motion.div>
 
-        <br />
+          <br />
 
-        {/* <motion.div
+          {/* <motion.div
         className="app__projects-contain"
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
@@ -60,8 +69,8 @@ const Projects = () => {
             <div className="project"></div>
           ))}
       </motion.div> */}
+        </motion.div>
       </motion.div>
-      {/* </motion.div> */}
     </div>
   );
 };

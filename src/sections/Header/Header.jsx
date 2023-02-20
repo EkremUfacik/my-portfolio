@@ -5,6 +5,7 @@ import profile1 from "../../assets/profile1-new.png";
 import react from "../../assets/skillsImg/react.png";
 import django from "../../assets/skillsImg/django.png";
 import javascript from "../../assets/skillsImg/javascript.png";
+import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 
 const scaleVariants = {
   whileInView: {
@@ -19,43 +20,65 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id="home" className="app__header app__flex">
-      <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
-        className="app__header-info"
-      >
-        <div className="app__header-badge">
-          <h3>Hello</h3>
-          <h1>I'm Ekrem</h1>
-          <h2>Full Stack Developer</h2>
-        </div>
-      </motion.div>
+    <>
+      <div className="navfix"></div>
+      <div id="home" className="app__header">
+        <motion.div
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="app__header-info"
+        >
+          <div className="app__header-badge">
+            <p className="welcome">WELCOME TO MY WEBSITE</p>
+            <h1>Hi, I'm Ekrem</h1>
+            <h2>Full Stack Developer</h2>
+          </div>
 
-      <motion.div
+          <ul className="app__header-social app__flex">
+            <li>
+              <a href="">
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <FaDiscord />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <FaGithub />
+              </a>
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
         <img src={profile1} alt="profile_bg" />
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
-        <div className="circle-cmp app__flex">
-          <img src={javascript} alt="profile_bg" />
-        </div>
-        <div className="circle-cmp app__flex">
-          <img src={react} alt="profile_bg" />
-        </div>
-        <div className="circle-cmp app__flex">
-          <img src={django} alt="profile_bg" />
-        </div>
-      </motion.div>
-    </div>
+        <motion.div
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className="app__header-circles"
+        >
+          <div className="circle-cmp app__flex">
+            <img src={javascript} alt="profile_bg" />
+          </div>
+          <div className="circle-cmp app__flex">
+            <img src={react} alt="profile_bg" />
+          </div>
+          <div className="circle-cmp app__flex">
+            <img src={django} alt="profile_bg" />
+          </div>
+        </motion.div>
+        {/* <div className="blur" /> */}
+      </div>
+    </>
   );
 };
 

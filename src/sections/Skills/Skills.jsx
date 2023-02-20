@@ -5,10 +5,8 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id="skills" className="app__skills">
-      <div className="app__skills-head">
-        <h2>My Skills</h2>
-      </div>
+    <div className="app__skills">
+      <h2 className="app__head">My Skills</h2>
       <motion.div
         className="app__skills-logos app__flex"
         whileInView={{ scale: [0, 1] }}

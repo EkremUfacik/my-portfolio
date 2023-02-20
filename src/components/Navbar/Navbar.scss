@@ -1,11 +1,11 @@
 .app__navbar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.116);
+  background-color: rgba(242, 242, 242, 0.355);
   padding: 0.5rem 2rem;
   backdrop-filter: blur(4px);
   position: fixed;
-  z-index: 2;
-  flex: 1;
+  z-index: 99;
+  // flex: 1;
   justify-content: space-between;
   .app__navbar-logo {
     img {
@@ -15,7 +15,7 @@
   }
   .app__navbar-links {
     flex: 1;
-    gap: 2rem;
+    gap: 2.5rem;
 
     li {
       flex-direction: column;
@@ -36,9 +36,10 @@
 
       .link {
         // text-decoration: none;
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: black;
         font-weight: 500;
+        font-size: 18px;
       }
 
       .active {
@@ -70,6 +71,7 @@
   // justify-content: center;
   // align-items: center;
   transition: all 1s;
+  // z-index: 99;
   // background-color: var(--secondary-color);
 
   svg {
@@ -79,17 +81,18 @@
     // color: var(--white-color);
   }
 
-  div {
+  .app__navbar-menu-container {
     transition: all 1.5s;
     position: absolute;
     top: 0;
     // bottom: 0;
     right: 0;
-    z-index: 5;
+    // z-index: 99;
 
     padding: 1rem;
 
     width: 40%;
+    min-width: 15rem;
     // height: 100vh;
 
     display: flex;
@@ -113,7 +116,7 @@
       margin: 0.5rem 1rem;
     }
 
-    ul {
+    .app__navbar-menu-links {
       // list-style: none;
       margin: 0;
       padding: 0;
@@ -131,9 +134,10 @@
         .link {
           color: var(--gray-color);
           // text-decoration: none;
-          font-size: 1rem;
-          text-transform: uppercase;
+          font-size: 18px;
+          text-transform: capitalize;
           font-weight: 500;
+          cursor: pointer;
 
           transition: all 0.3s ease-in-out;
 

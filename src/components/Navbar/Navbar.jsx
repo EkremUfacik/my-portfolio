@@ -30,7 +30,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={400}
+              duration={300}
             >
               {item}
               <div />
@@ -42,14 +42,26 @@ const Navbar = () => {
       <div className="app__navbar-menu">
         <FiMenu size={"1.5rem"} onClick={() => setToggle(true)} />
 
-        <div style={{ right: toggle ? "0" : "-100%" }}>
+        <div
+          className="app__navbar-menu-container"
+          style={{ right: toggle ? "0" : "-100%" }}
+        >
           <FiX onClick={() => setToggle(false)} />
           <ul className="app__navbar-menu-links app__flex">
             {navLinks.map((item, index) => (
-              <li key={index} onClick={() => setIsActive(index)}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>
+              <li key={index}>
+                <Link
+                  className="link"
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={300}
+                  onClick={() => setToggle(false)}
+                >
                   {item}
-                </a>
+                  <div />
+                </Link>
               </li>
             ))}
           </ul>
