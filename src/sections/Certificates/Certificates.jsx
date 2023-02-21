@@ -20,7 +20,7 @@ const Certificates = () => {
 
   return (
     <div className="app__certificates">
-      <h2 className="app__head">Certificates</h2>
+      {/* <h2 className="app__head"></h2> */}
       <motion.div
         className="app__certificates-contain"
         whileInView={{ opacity: [0, 1], x: [-200, 0] }}
@@ -45,7 +45,7 @@ const Certificates = () => {
         {certificatesList.map((item, index) => (
           <div
             className="dot"
-            style={{ opacity: current === index ? "0.5" : "" }}
+            style={{ opacity: current === index ? "1" : "" }}
             key={index}
             onClick={() => setCurrent(index)}
           ></div>

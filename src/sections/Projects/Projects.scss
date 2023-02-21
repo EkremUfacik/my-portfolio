@@ -1,13 +1,14 @@
 .app__projects {
   // margin-left: 50%;
   // margin-right: 50%;
-  margin: 1rem;
+  margin: 0 1rem;
   overflow-x: hidden;
+  // height: 100vh;
   padding-top: 10px;
   border-left: 3px solid rgba(0, 0, 0, 0.653);
   border-right: 3px solid rgba(0, 0, 0, 0.653);
-  box-shadow: inset 8px 0 0 0 rgba(0, 0, 0, 0.722),
-    inset -8px 0 0 0 rgba(0, 0, 0, 0.642);
+  box-shadow: inset 8px 0 0 0 rgba(0, 0, 0, 0.708),
+    inset -8px 0 0 0 rgba(0, 0, 0, 0.708);
   user-select: none;
   cursor: pointer;
   //   transition: all 0.2s;
@@ -16,6 +17,8 @@
   .app__projects-contain {
     display: flex;
     gap: 1rem;
+    padding-top: 8px;
+    // flex-direction: column;
 
     // overflow-x: scroll;
 
@@ -23,7 +26,7 @@
       // width: 50vw;
       // height: 20rem;
       // min-width: 35rem;
-      background-color: rgba(232, 232, 232, 0.364);
+      background-color: rgba(232, 232, 232, 0.39);
       position: relative;
 
       .project-info {
@@ -51,10 +54,10 @@
       .project-img {
         width: 60vw;
         // height: 100%;
-        min-width: 20rem;
+        min-width: 24rem;
         max-width: 36rem;
         height: 30vw;
-        min-height: 10rem;
+        min-height: 12rem;
         max-height: 18rem;
         // background-color: rgba(0, 0, 0, 0.092);
         background-repeat: no-repeat;
@@ -131,6 +134,9 @@
 
       .project-name {
         text-align: center;
+        font-size: clamp(16px, 2vw, 20px);
+        padding: 5px 0;
+        font-weight: 500;
       }
     }
   }

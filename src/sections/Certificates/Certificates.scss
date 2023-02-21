@@ -2,7 +2,7 @@
   max-width: 650px;
   //   height: 450px;
   text-align: center;
-  margin: 1rem auto;
+  margin: 5rem auto;
   padding: 0 10px;
   .app__certificates-contain {
     position: relative;
@@ -79,9 +79,10 @@
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.721);
       transition: all 0.5s;
+      opacity: 0.5;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 1;
         // background-color: blue;
       }
     }

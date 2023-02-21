@@ -25,14 +25,14 @@ const Projects = () => {
   return (
     <div>
       <h2 className="app__head" style={{ textAlign: "center" }}>
-        Projects
+        Projects & Certificates
       </h2>
       <motion.div
         ref={out}
         // className="app__projects-outer"
         initial={{ paddingLeft: "50%", paddingRight: "50%" }}
         whileInView={{ paddingLeft: 0, paddingRight: 0 }}
-        transition={{ duration: 0.7, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         <motion.div
           key={key}
