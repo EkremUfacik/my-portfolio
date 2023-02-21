@@ -1,20 +1,39 @@
 import "./Contact.scss";
 
 import React from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(
+      () => {
+        alert("Successfully");
+        window.location.reload(false);
+      },
+      () => alert("Failed")
+    );
+  };
   return (
     <div id="contact" className="app__contact">
       <h2 className="app__head">Contact Me</h2>
-      <form className="app__flex">
+      <form className="app__flex" ref={formRef} onSubmit={sendEmail}>
         <div className="app__contact-input app__flex">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
-          <input type="text" placeholder="Your Phone" />
+          <input type="text" placeholder="Your Name" name="name" />
+          <input type="text" placeholder="Your Email" name="email" />
+          <input type="text" placeholder="Your Phone" name="phone" />
         </div>
         {/* <div> */}
         <textarea
-          name=""
+          name="message"
           id=""
           // cols="30"
           rows="10"
@@ -28,16 +47,16 @@ const Contact = () => {
 
       <div className="app__contact-info app__flex">
         <div>
-          <h4>Email Me</h4>
+          <h4>Email</h4>
           <p>ekremufacik07@gmail.com</p>
         </div>
         <div>
-          <h4>Call Me</h4>
+          <h4>Phone</h4>
           <p>5444746867</p>
         </div>
         <div>
           <h4>Address</h4>
-          <p>Görele/Giresun</p>
+          <p>Giresun</p>
         </div>
       </div>
     </div>

@@ -12,8 +12,8 @@ const Skills = () => {
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        {imageObj.map((logo) => (
-          <motion.div className="app__skills-logo">
+        {imageObj.map((logo, index) => (
+          <motion.div className="app__skills-logo" key={index}>
             {/* <p>{logo.name}</p> */}
             <div className="img-div app__flex">
               <img src={logo.img} alt="" />

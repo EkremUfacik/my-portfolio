@@ -1,37 +1,25 @@
 .app__projects {
-  // margin-left: 50%;
-  // margin-right: 50%;
   margin: 0 1rem;
   overflow-x: hidden;
-  // height: 100vh;
-  padding-top: 10px;
+  padding: 14px 0;
   border-left: 3px solid rgba(0, 0, 0, 0.653);
   border-right: 3px solid rgba(0, 0, 0, 0.653);
   box-shadow: inset 8px 0 0 0 rgba(0, 0, 0, 0.708),
     inset -8px 0 0 0 rgba(0, 0, 0, 0.708);
   user-select: none;
   cursor: pointer;
-  //   transition: all 0.2s;
-  //   transform: scale(0.98);
 
   .app__projects-contain {
     display: flex;
     gap: 1rem;
-    padding-top: 8px;
-    // flex-direction: column;
-
-    // overflow-x: scroll;
+    // padding-top: 8px;
 
     .project {
-      // width: 50vw;
-      // height: 20rem;
-      // min-width: 35rem;
       background-color: rgba(232, 232, 232, 0.39);
       position: relative;
 
       .project-info {
         position: absolute;
-        // text-align: center;
         z-index: 10;
         left: 50%;
         transform: translate(-50%);
@@ -41,32 +29,21 @@
 
         img {
           width: clamp(40px, 5vw, 55px);
-          // border-radius: 50%;
-          // background-color: rgba(255, 255, 255, 0.826);
-          // box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.325);
           filter: drop-shadow(10px 10px 3px rgba(0, 0, 0, 0.678));
-          // @media screen and (min-width: 768px) {
-          //   width: 50px;
-          //   margin-top: 5px;
-          // }
         }
       }
       .project-img {
         width: 60vw;
-        // height: 100%;
         min-width: 24rem;
         max-width: 36rem;
         height: 30vw;
         min-height: 12rem;
         max-height: 18rem;
-        // background-color: rgba(0, 0, 0, 0.092);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        // box-shadow: 10px 10px 5px 5px black;
         transition: all 0.5s;
         position: relative;
-        // opacity: 0.8;
 
         .filter {
           position: absolute;
@@ -91,8 +68,6 @@
           .icon {
             font-size: clamp(35px, 3vw, 40px);
             background-color: rgba(0, 0, 0, 0.551);
-            // width: 40px;
-            // height: 40px;
             padding: 7px;
             border-radius: 50%;
             user-select: none;
@@ -112,22 +87,9 @@
         }
 
         &:hover .project-icons {
-          // display: block;
           scale: 1;
-          // color: white;
         }
       }
-
-      // &::before {
-      //   content: url("../../assets/Re.png");
-      //   // content: "";
-      //   position: absolute;
-      //   // background-color: rgba(0, 0, 0, 0.515);
-      //   scale: 2;
-      //   bottom: 50%;
-      //   right: 50%;
-      //   transform: translate(-50%, -50%);
-      // }
       &:hover .project-info {
         opacity: 1;
       }

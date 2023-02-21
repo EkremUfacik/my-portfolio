@@ -20,7 +20,6 @@ const Certificates = () => {
 
   return (
     <div className="app__certificates">
-      {/* <h2 className="app__head"></h2> */}
       <motion.div
         className="app__certificates-contain"
         whileInView={{ opacity: [0, 1], x: [-200, 0] }}
@@ -28,6 +27,7 @@ const Certificates = () => {
       >
         {certificatesList.map((item, index) => (
           <motion.div
+            key={index}
             className={index === current ? "certificate active" : "certificate"}
             style={{ backgroundImage: `url(${item.img})` }}
           ></motion.div>
