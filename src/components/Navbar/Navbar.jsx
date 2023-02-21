@@ -3,13 +3,10 @@ import "./Navbar.scss";
 import avatar from "../../assets/avatar.jpg";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
-import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   let navLinks = ["home", "about", "skills", "projects", "contact"];
-
-  const [isActive, setIsActive] = useState();
   const [toggle, setToggle] = useState(false);
 
   return (

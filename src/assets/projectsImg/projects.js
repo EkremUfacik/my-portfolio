@@ -41,7 +41,7 @@ const projectImg = [
     img: fireblog,
     repo: "https://github.com/EkremUfacik/fireblog-app",
     live: "https://fireblog-app-eu.netlify.app/",
-    tech: ["js"],
+    tech: ["js", "react"],
   },
   {
     name: "Flag App",

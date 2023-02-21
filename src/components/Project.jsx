@@ -9,7 +9,6 @@ import { FaGithub } from "react-icons/fa";
 const Project = ({ project }) => {
   return (
     <div id="projects" className="project">
-      {/* <img src={project.img} alt="" /> */}
       <div className="project-info">
         <img src={jslogo} alt="" />
         {project.tech.includes("react") && <img src={reactlogo} alt="" />}

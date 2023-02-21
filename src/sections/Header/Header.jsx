@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
-import profile1 from "../../assets/profile1-new.png";
 import react from "../../assets/skillsImg/react.png";
 import django from "../../assets/skillsImg/django.png";
 import javascript from "../../assets/skillsImg/javascript.png";
@@ -36,17 +35,17 @@ const Header = () => {
 
           <ul className="app__header-social app__flex">
             <li>
-              <a href="">
+              <a href="https://www.linkedin.com/in/ekrem-ufacik/">
                 <FaLinkedinIn />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://discord.com/channels/@me">
                 <FaDiscord />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://github.com/EkremUfacik">
                 <FaGithub />
               </a>
             </li>
