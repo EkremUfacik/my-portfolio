@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="app__skills">
+    <div id="skills" className="app__skills">
       <h2 className="app__head">My Skills</h2>
       <motion.div
         className="app__skills-logos app__flex"

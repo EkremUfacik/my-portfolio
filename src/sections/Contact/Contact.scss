@@ -1,0 +1,87 @@
+.app__contact {
+  width: 80%;
+  max-width: 45rem;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+
+  form {
+    flex-direction: column;
+    // width: 100%;
+    gap: 1rem;
+    // flex: 1;
+    .app__contact-input {
+      gap: 1rem;
+      //   flex: 1;
+      width: 100%;
+      input {
+        width: 33%;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid black;
+        outline: none;
+        font-family: "Roboto Slab", serif;
+        font-size: 15px;
+
+        &:focus {
+          background-color: rgba(219, 240, 255, 0.638);
+          font-family: "Roboto Slab", serif;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 80%;
+        min-width: 20rem;
+        input {
+          width: 100%;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      //   background-color: aqua;
+      resize: none;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid black;
+      outline: none;
+      font-family: "Roboto Slab", serif;
+      font-size: 15px;
+      padding: 8px;
+
+      &:focus {
+        background-color: rgba(219, 240, 255, 0.638);
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+    }
+
+    .app__contact-btn {
+      padding: 8px 26px;
+      font-family: "Roboto Slab", serif;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 1rem;
+    }
+  }
+
+  .app__contact-info {
+    width: 100%;
+    padding: 4rem 0;
+
+    div {
+      width: 33%;
+
+      h4 {
+        font-weight: 500;
+      }
+
+      p {
+        padding: 0.8rem 0;
+      }
+    }
+  }
+}

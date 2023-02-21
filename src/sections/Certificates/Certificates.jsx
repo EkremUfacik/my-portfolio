@@ -45,7 +45,10 @@ const Certificates = () => {
         {certificatesList.map((item, index) => (
           <div
             className="dot"
-            style={{ opacity: current === index ? "1" : "" }}
+            style={{
+              opacity: current === index ? "0.9" : "",
+              scale: current === index ? "1.2" : "",
+            }}
             key={index}
             onClick={() => setCurrent(index)}
           ></div>

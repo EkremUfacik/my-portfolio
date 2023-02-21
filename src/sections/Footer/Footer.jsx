@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="app__footer app__flex">
+    <footer className="app__footer app__flex">
       <ul className="app__footer-social app__flex">
         <li>
           <a href="https://www.linkedin.com/in/ekrem-ufacik/">
