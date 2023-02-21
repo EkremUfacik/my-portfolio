@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar app__flex">
       <div className="app__navbar-logo app__flex">
-        <img src={avatar} alt="" />
+        <a href="#home">
+          <img src={avatar} alt="" />
+        </a>
       </div>
       <ul className="app__navbar-links app__flex">
         {navLinks.map((item, index) => (

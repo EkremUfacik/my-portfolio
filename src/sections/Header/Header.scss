@@ -1,5 +1,5 @@
 .navfix {
-  height: 4.2rem;
+  height: 4.5rem;
 }
 
 .app__header {
@@ -8,30 +8,13 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  // background-color: rgb(233, 233, 233);
   display: flex;
-  // flex: 1;
   width: 100%;
   min-height: calc(100vh - 4.2rem);
   line-height: 40px;
-  // flex-direction: row;
   justify-content: center;
   align-items: center;
-
   padding: 5rem 0rem;
-  // margin-top: 4rem;
-
-  // @media screen and (min-width: 2000px) {
-  //   padding-top: 8rem;
-  // }
-
-  // @media screen and (max-width: 1200px) {
-  //   flex-direction: column;
-  // }
-
-  // @media screen and (max-width: 450px) {
-  //   padding: 6rem 1rem 2rem;
-  // }
 
   .app__header-info {
     flex: 0.75;
@@ -42,25 +25,11 @@
     height: 100%;
     z-index: 1;
 
-    // margin: 0 2rem;
-
-    // @media screen and (max-width: 1200px) {
-    //   width: 100%;
-    //   margin-right: 0rem;
-    // }
-
     .app__header-badge {
-      // margin-left: 2rem;
-      // width: 100%;
-      // display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
 
-      // @media screen and (max-width: 1200px) {
-      //   justify-content: flex-start;
-      //   align-items: flex-start;
-      // }
       .welcome {
         font-family: "Urbanist", sans-serif;
         font-size: 14px;
@@ -69,7 +38,6 @@
     }
 
     .app__header-social {
-      // margin-left: 2rem;
       gap: 1rem;
       flex-direction: column;
       margin-top: 1rem;
@@ -92,21 +60,18 @@
   }
 
   .app__header-circles {
-    // flex: 0.5;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
     height: 100%;
     z-index: 2;
-    // margin-left: 1rem;
 
     div {
       width: 80px;
       height: 80px;
       border-radius: 50%;
 
-      // background:
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
       img {
@@ -114,8 +79,6 @@
         height: 60%;
       }
     }
-
-    // circles with different height & width
 
     div:nth-child(1) {
       width: 80px;
@@ -132,41 +95,11 @@
       width: 60px;
       height: 60px;
     }
-
-    // @media screen and (min-width: 2000px) {
-    //   div:nth-child(2) {
-    //     width: 400px;
-    //     height: 400px;
-    //   }
-
-    //   div:nth-child(3) {
-    //     width: 170px;
-    //     height: 170px;
-    //   }
-
-    //   div:nth-child(1) {
-    //     width: 200px;
-    //     height: 200px;
-    //   }
-    // }
-
-    // @media screen and (max-width: 1200px) {
-    //   width: 100%;
-    //   flex-direction: row;
-    //   flex-wrap: wrap;
-    //   margin-left: 0;
-
-    //   div {
-    //     margin: 1rem;
-    //   }
-    // }
   }
 
   @media screen and (max-width: 768px) {
     background-size: cover;
     color: rgb(255, 255, 255);
-    // z-index: 10;
-    // box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.675);
     &::after {
       content: "";
       position: absolute;
@@ -175,7 +108,6 @@
       background-color: rgba(39, 39, 39, 0.301);
       top: 0;
       left: 0;
-      // z-index: 0;
     }
   }
 
