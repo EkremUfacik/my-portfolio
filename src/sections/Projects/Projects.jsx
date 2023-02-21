@@ -3,7 +3,6 @@ import "./Projects.scss";
 import { motion } from "framer-motion";
 import projectsImg from "../../assets/projectsImg/projects";
 import Project from "../../components/Project";
-import useWindowSize from "../../hooks/useWindowSize";
 
 const Projects = () => {
   let outer = useRef();
@@ -20,6 +19,7 @@ const Projects = () => {
     window.addEventListener("resize", updateSize);
     updateSize();
     return () => window.removeEventListener("resize", updateSize);
+    // eslint-disable-next-line
   }, [window.innerWidth]);
 
   return (

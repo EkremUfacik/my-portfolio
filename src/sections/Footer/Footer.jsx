@@ -7,17 +7,17 @@ const Footer = () => {
     <footer id="contact" className="app__footer app__flex">
       <ul className="app__footer-social app__flex">
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/ekrem-ufacik/">
             <FaLinkedinIn />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://discord.com/channels/@me">
             <FaDiscord />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://github.com/EkremUfacik">
             <FaGithub />
           </a>
         </li>
