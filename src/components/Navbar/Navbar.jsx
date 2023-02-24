@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar app__flex">
       <div className="app__navbar-logo app__flex">
-        <a href="#home">
+        <a href="#top">
           <img src={avatar} alt="" />
         </a>
       </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
               to={item}
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-200}
               duration={300}
             >
               {item}

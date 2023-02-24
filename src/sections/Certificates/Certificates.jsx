@@ -23,7 +23,7 @@ const Certificates = () => {
       <motion.div
         className="app__certificates-contain"
         whileInView={{ opacity: [0, 1], x: [-200, 0] }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
       >
         {certificatesList.map((item, index) => (
           <motion.div

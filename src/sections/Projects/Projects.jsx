@@ -22,10 +22,8 @@ const Projects = () => {
   }, [window.innerWidth]);
 
   return (
-    <div>
-      <h2 className="app__head" style={{ textAlign: "center" }}>
-        Projects & Certificates
-      </h2>
+    <div className="app__projects-main">
+      <h2 className="app__head">Projects & Certificates</h2>
       <motion.div
         ref={out}
         initial={{ paddingLeft: "50%", paddingRight: "50%" }}

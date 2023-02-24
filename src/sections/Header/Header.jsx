@@ -20,7 +20,7 @@ const scaleVariants = {
 const Header = () => {
   return (
     <>
-      <div className="navfix"></div>
+      <div id="top" className="navfix"></div>
       <div id="home" className="app__header">
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -52,14 +52,6 @@ const Header = () => {
           </ul>
         </motion.div>
 
-        {/* <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={profile1} alt="profile_bg" />
-      </motion.div> */}
-
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
@@ -75,7 +67,6 @@ const Header = () => {
             <img src={django} alt="profile_bg" />
           </div>
         </motion.div>
-        {/* <div className="blur" /> */}
       </div>
     </>
   );
