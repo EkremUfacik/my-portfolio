@@ -1,9 +1,7 @@
 .app__skills {
-  // width: 50rem;
   text-align: center;
   margin: 4rem auto;
   width: 100%;
-  // padding: 2rem;
 
   .app__skills-logos {
     flex-wrap: wrap;
@@ -15,25 +13,38 @@
 
     .app__skills-logo {
       width: 20%;
-      // height: 10rem;
       max-width: 6rem;
       min-width: 5rem;
-      // background-color: rgb(217, 217, 217);
 
       .img-div {
-        // width: 5rem;
+        flex-direction: column;
         height: 5rem;
         border-radius: 10px;
-        // background-color: rgb(245, 234, 234);
         padding: 5px;
-        // width: 100%;
 
         img {
-          // width: 60px;
           width: 90%;
-          // box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.46);
-          // height: 80px;
-          // border-radius: 50%;
+          transition: all 0.5s;
+          cursor: pointer;
+        }
+
+        .logo-name {
+          position: absolute;
+          opacity: 0;
+          transition: all 0.5s;
+          color: rgb(0, 0, 0);
+          font-weight: 600;
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        &:hover .logo-name {
+          opacity: 1;
+        }
+
+        &:hover img {
+          opacity: 0.3;
+          scale: 0.9;
         }
       }
     }

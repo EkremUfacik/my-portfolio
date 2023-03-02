@@ -14,9 +14,9 @@ const Skills = () => {
       >
         {imageObj.map((logo, index) => (
           <motion.div className="app__skills-logo" key={index}>
-            {/* <p>{logo.name}</p> */}
             <div className="img-div app__flex">
               <img src={logo.img} alt="" />
+              <div className="logo-name">{logo.name}</div>
             </div>
           </motion.div>
         ))}

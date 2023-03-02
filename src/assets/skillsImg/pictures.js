@@ -1,6 +1,6 @@
 import html from "./html.png";
 import css from "./css.png";
-import git from "./git.png";
+import tailwind from "./tailwind.png";
 import javascript from "./javascript.png";
 import python from "./python.png";
 import react from "./react.png";
@@ -11,25 +11,25 @@ import postgre from "./postgresql.png";
 import mui from "./mui.png";
 import github from "./github.png";
 import django from "./django.png";
-import vscode from "./vscode.png";
+import nextjs from "./nextjs.png";
 import bootstrap from "./bootstrap.png";
 
 const imageObj = [
-  { name: "html", img: html },
-  { name: "css", img: css },
-  { name: "javascript", img: javascript },
-  { name: "typescript", img: typescript },
-  { name: "python", img: python },
-  { name: "django", img: django },
-  { name: "react", img: react },
-  { name: "redux", img: redux },
-  { name: "mui", img: mui },
-  { name: "sass", img: sass },
-  { name: "bootstrap", img: bootstrap },
-  { name: "vscode", img: vscode },
-  { name: "git", img: git },
-  { name: "github", img: github },
-  { name: "postgre", img: postgre },
+  { name: "Html", img: html },
+  { name: "CSS", img: css },
+  { name: "Javascript", img: javascript },
+  { name: "Typescript", img: typescript },
+  { name: "Python", img: python },
+  { name: "Django", img: django },
+  { name: "React", img: react },
+  { name: "Redux", img: redux },
+  { name: "MUI", img: mui },
+  { name: "Sass", img: sass },
+  { name: "Bootstrap", img: bootstrap },
+  { name: "Next Js", img: nextjs },
+  { name: "Tailwind", img: tailwind },
+  { name: "Github", img: github },
+  { name: "Postgre", img: postgre },
 ];
 
 export default imageObj;

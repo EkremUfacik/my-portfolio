@@ -49,7 +49,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.153);
+        background-color: rgba(0, 0, 0, 0.1);
         transition: all 0.5s;
 
         &:hover {
@@ -105,7 +105,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background-color: rgba(39, 39, 39, 0.301);
+      background-color: rgba(39, 39, 39, 0.162);
       top: 0;
       left: 0;
     }
@@ -115,19 +115,19 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
-    &::before {
-      content: "";
-      position: absolute;
-      height: 20%;
-      width: 100%;
-      background: linear-gradient(
-        0deg,
-        #edf2f8 15%,
-        rgba(233, 233, 233, 0) 50%
-      );
-      bottom: -10px;
-      left: 0;
-    }
-  }
+  // @media screen and (min-width: 769px) {
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 20%;
+  //   width: 100%;
+  //   background: linear-gradient(
+  //     0deg,
+  //     #edf2f8 15%,
+  //     rgba(233, 233, 233, 0) 50%
+  //   );
+  //   bottom: -10px;
+  //   left: 0;
+  // }
+  // }
 }
