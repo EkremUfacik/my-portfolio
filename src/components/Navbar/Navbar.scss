@@ -1,6 +1,7 @@
 .app__navbar {
   width: 100%;
   background-color: rgba(242, 242, 242, 0.355);
+  // background-color: rgba(0, 0, 0, 0.408);
   padding: 0.5rem 2rem;
   backdrop-filter: blur(4px);
   position: fixed;
@@ -39,9 +40,10 @@
       .link {
         // text-decoration: none;
         text-transform: capitalize;
-        color: black;
+        // color: black;
         font-weight: 500;
         font-size: 18px;
+        // color: white;
       }
 
       .active {

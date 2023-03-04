@@ -71,6 +71,7 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.375);
 
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
@@ -81,19 +82,19 @@
     }
 
     div:nth-child(1) {
-      width: 80px;
-      height: 80px;
-    }
-
-    div:nth-child(2) {
-      margin: 1.75rem;
       width: 100px;
       height: 100px;
     }
 
+    div:nth-child(2) {
+      margin: 2rem;
+      width: 120px;
+      height: 120px;
+    }
+
     div:nth-child(3) {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
     }
   }
 

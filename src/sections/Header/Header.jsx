@@ -21,7 +21,17 @@ const Header = () => {
   return (
     <>
       <div id="top" className="navfix"></div>
-      <div id="home" className="app__header">
+      <motion.div
+        id="home"
+        className="app__header"
+        whileInView={{
+          opacity: [0, 1],
+          transition: {
+            duration: 1,
+            ease: "easeInOut",
+          },
+        }}
+      >
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
@@ -67,7 +77,7 @@ const Header = () => {
             <img src={django} alt="profile_bg" />
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 };
