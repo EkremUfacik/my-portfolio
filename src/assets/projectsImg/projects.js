@@ -2,16 +2,16 @@ import cart from "./cart.png";
 import clock from "./clock.png";
 import calculator from "./calculator.png";
 import fireblog from "./fireblog.png";
-import flag from "./flag.png";
+// import flag from "./flag.png";
 import memory from "./memory.png";
 import movie from "./movie.png";
 import quiz from "./quiz.png";
 import recipe from "./recipe.png";
 import stock from "./stock.png";
 import sudoku from "./sudoku.png";
-import task from "./task.png";
+// import task from "./task.png";
 import tour from "./tour.png";
-import user from "./user.png";
+// import user from "./user.png";
 import weather from "./weather.png";
 
 const projectImg = [
