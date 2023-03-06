@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Certificates from "./sections/Certificates/Certificates";
 import Contact from "./sections/Contact/Contact";
+import Projects2 from "./sections/Projects/Projects2";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <About />
       <Skills />
-      <Projects />
+      <Projects2 />
       <Certificates />
       <Contact />
       <Footer />

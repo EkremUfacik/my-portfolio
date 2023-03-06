@@ -20,6 +20,7 @@ const Certificates = () => {
 
   return (
     <div className="app__certificates">
+      <h2 style={{ textAlign: "center", padding: "1rem 0" }}>-Certificates-</h2>
       <motion.div
         className="app__certificates-contain"
         whileInView={{ opacity: [0, 1], x: [-200, 0] }}

@@ -11,7 +11,7 @@ const Project = ({ project }) => {
     <div id="projects" className="project">
       <div className="project-info">
         <img src={jslogo} alt="" />
-        {project.tech.includes("react") && <img src={reactlogo} alt="" />}
+        {project.tech.includes("React") && <img src={reactlogo} alt="" />}
         {project.tech.includes("redux") && <img src={reduxlogo} alt="" />}
         {project.tech.includes("ts") && <img src={tslogo} alt="" />}
       </div>
