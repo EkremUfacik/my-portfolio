@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Header, About, Skills, Projects } from "./sections";
+import { Header, About, Skills } from "./sections";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Certificates from "./sections/Certificates/Certificates";
