@@ -19,15 +19,17 @@ const Project = ({ project }) => {
         className="project-img"
         style={{ backgroundImage: `url(${project.img})` }}
       >
-        <div className="project-icons">
-          <a href={project.live}>
-            <AiFillEye className="icon" />
-          </a>
-          <a href={project.repo}>
-            <FaGithub className="icon" />
-          </a>
-        </div>
-        <div className="filter" />
+        <a href={project.live} target="_blank" rel="noreferrer">
+          <div className="project-icons">
+            <a href={project.live} target="_blank" rel="noreferrer">
+              <AiFillEye className="icon" />
+            </a>
+            <a href={project.repo} target="_blank" rel="noreferrer">
+              <FaGithub className="icon" />
+            </a>
+          </div>
+          <div className="filter" />
+        </a>
       </div>
       <p className="project-name">{project.name}</p>
     </div>

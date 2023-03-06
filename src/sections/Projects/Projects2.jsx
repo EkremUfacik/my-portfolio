@@ -37,7 +37,7 @@ const Projects2 = () => {
       <motion.div
         className="app__projects-contain app__flex"
         whileInView={{ opacity: [0, 1], x: [-200, 0] }}
-        transition={{ duration: 0.4, delay: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
       >
         {filteredList.map((project, index) => (
           <Project key={index} project={project} />

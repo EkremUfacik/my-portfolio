@@ -7,8 +7,9 @@
     padding: 2rem 0;
 
     li {
-      padding: 6px 8px;
+      padding: 6px 10px;
       cursor: pointer;
+      transition: all 0.5s;
     }
     .active {
       background-color: black;
@@ -123,7 +124,7 @@
         width: 80%;
         // height: 20rem;
         & .project-img {
-          height: 35vw;
+          height: 36vw;
         }
       }
     }
