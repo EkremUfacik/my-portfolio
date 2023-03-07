@@ -5,10 +5,10 @@ import Footer from "./components/Footer/Footer";
 import Certificates from "./sections/Certificates/Certificates";
 import Contact from "./sections/Contact/Contact";
 import Projects2 from "./sections/Projects/Projects2";
-import ThemeProvider, { useThemeContext } from "./context/ThemeProvider";
+import { useThemeContext } from "./context/ThemeProvider";
 
 function App() {
-  const { theme, setTheme } = useThemeContext();
+  const { theme } = useThemeContext();
   console.log(theme);
   return (
     <div className={theme === "light" ? "app" : "app-dark"}>
