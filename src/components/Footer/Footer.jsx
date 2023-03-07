@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.scss";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
-import { useThemeContext } from "../../context/ThemeProvider";
 
 const Footer = () => {
   return (
