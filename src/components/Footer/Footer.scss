@@ -4,7 +4,7 @@
   background-color: rgba(219, 240, 255, 0.638);
   justify-content: space-around;
   font-size: 20px;
-  color: black;
+  // color: black;
 
   .app__footer-social {
     gap: 1rem;
@@ -21,6 +21,10 @@
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.384);
+      }
+
+      a:visited {
+        color: inherit;
       }
     }
   }

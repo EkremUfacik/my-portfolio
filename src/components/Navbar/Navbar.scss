@@ -63,105 +63,106 @@
       display: none;
     }
   }
-}
 
-.app__navbar-menu {
-  // width: 35px;
-  // height: 35px;
-  // border-radius: 50%;
-  // position: relative;
+  .app__navbar-menu {
+    // width: 35px;
+    // height: 35px;
+    // border-radius: 50%;
+    // position: relative;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  transition: all 1s;
-  // z-index: 99;
-  // background-color: var(--secondary-color);
-
-  svg {
-    cursor: pointer;
-    // width: 70%;
-    // height: 70%;
-    // color: var(--white-color);
-  }
-
-  .app__navbar-menu-container {
-    transition: all 1.5s;
-    position: absolute;
-    top: 0;
-    // bottom: 0;
-    right: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    transition: all 1s;
     // z-index: 99;
-
-    padding: 1rem;
-
-    width: 40%;
-    min-width: 15rem;
-    // height: 100vh;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-
-    // background: url("../../assets/bgWhite.png");
-    background-color: var(--white-color);
-    // background-size: cover;
-    // background-repeat: repeat;
-
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+    // background-color: var(--secondary-color);
 
     svg {
       cursor: pointer;
-      width: 35px;
-      height: 35px;
-      color: var(--secondary-color);
-      margin: 0.5rem 1rem;
+      // width: 70%;
+      // height: 70%;
+      // color: var(--white-color);
     }
 
-    .app__navbar-menu-links {
-      // list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+    .app__navbar-menu-container {
+      transition: all 1.5s;
+      position: absolute;
+      top: 0;
+      // bottom: 0;
+      right: 0;
+      z-index: 99;
 
-      // display: flex;
-      // justify-content: flex-start;
-      // align-items: flex-start;
+      padding: 1rem;
+
+      width: 40%;
+      min-width: 15rem;
+      // height: 100vh;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
       flex-direction: column;
 
-      li {
-        margin: 1.2rem;
+      // background: url("../../assets/bgWhite.png");
+      // background-color: var(--white-color);
+      background-color: rgba(49, 49, 49, 0.766);
+      // background-size: cover;
+      // background-repeat: repeat;
 
-        .link {
-          // color: var(--gray-color);
-          // text-decoration: none;
-          font-size: 18px;
-          text-transform: capitalize;
-          font-weight: 500;
-          cursor: pointer;
+      /* top box shadow */
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
-          transition: all 0.3s ease-in-out;
+      svg {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        color: var(--secondary-color);
+        margin: 0.5rem 1rem;
+      }
 
-          &:hover {
-            color: var(--secondary-color);
-          }
+      .app__navbar-menu-links {
+        // list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
 
-          .active {
-            color: red;
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: flex-start;
+        flex-direction: column;
+
+        li {
+          margin: 1.2rem;
+
+          .link {
+            // color: var(--gray-color);
+            // text-decoration: none;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 500;
+            cursor: pointer;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: var(--secondary-color);
+            }
+
+            .active {
+              // color: red;
+            }
           }
         }
+      }
+
+      @media screen and (min-width: 769px) {
+        display: none;
       }
     }
 
     @media screen and (min-width: 769px) {
       display: none;
     }
-  }
-
-  @media screen and (min-width: 769px) {
-    display: none;
   }
 }
