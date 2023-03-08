@@ -10,6 +10,7 @@
   // flex: 1;
   justify-content: space-between;
   .app__navbar-logo {
+    cursor: pointer;
     img {
       width: 50px;
       border-radius: 50%;
@@ -105,7 +106,7 @@
 
       // background: url("../../assets/bgWhite.png");
       // background-color: var(--white-color);
-      background-color: rgba(49, 49, 49, 0.766);
+      background-color: rgba(245, 245, 245, 0.897);
       // background-size: cover;
       // background-repeat: repeat;
 

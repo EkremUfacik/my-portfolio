@@ -11,7 +11,7 @@ const Footer = () => {
       style={{
         backgroundColor:
           theme === "light"
-            ? "rgba(200, 202, 211, 0.655)"
+            ? "rgba(226, 229, 243, 0.655)"
             : "rgba(8, 11, 28, 0.66)",
       }}
     >

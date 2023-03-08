@@ -3,6 +3,7 @@ import "./Contact.scss";
 import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,10 +17,11 @@ const Contact = () => {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(
       () => {
-        alert("Successfully");
-        window.location.reload(false);
+        e.preventDefault();
+        formRef.current.reset();
+        toast.success("Message Submitted...");
       },
-      () => alert("Failed")
+      () => toast.error("Message Not Submitted!")
     );
   };
   return (
@@ -27,8 +29,8 @@ const Contact = () => {
       <h2 className="app__head">Contact Me</h2>
       <form className="app__flex" ref={formRef} onSubmit={sendEmail}>
         <div className="app__contact-input app__flex">
-          <input type="text" placeholder="Your Name" name="name" />
-          <input type="text" placeholder="Your Email" name="email" />
+          <input type="text" placeholder="Your Name" name="name" required />
+          <input type="email" placeholder="Your Email" name="email" required />
           <input type="text" placeholder="Your Phone" name="phone" />
         </div>
         {/* <div> */}
@@ -38,6 +40,7 @@ const Contact = () => {
           // cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         {/* </div> */}
         <button className="app__contact-btn" type="submit">

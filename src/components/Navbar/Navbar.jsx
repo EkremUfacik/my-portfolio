@@ -23,9 +23,9 @@ const Navbar = () => {
       }}
     >
       <div className="app__navbar-logo app__flex">
-        <a href="#top">
+        <Link to="home" spy={true} smooth={true} offset={-200} duration={300}>
           <img src={avatar} alt="" />
-        </a>
+        </Link>
       </div>
       <ul className="app__navbar-links app__flex">
         {navLinks.map((item, index) => (
@@ -56,7 +56,13 @@ const Navbar = () => {
 
           <div
             className="app__navbar-menu-container"
-            style={{ right: toggle ? "0" : "-100%" }}
+            style={{
+              right: toggle ? "0" : "-100%",
+              backgroundColor:
+                theme === "light"
+                  ? "rgba(245, 245, 245, 0.897)"
+                  : "rgba(7, 8, 19, 0.592)",
+            }}
           >
             <FiX onClick={() => setToggle(false)} />
             <ul className="app__navbar-menu-links app__flex">
