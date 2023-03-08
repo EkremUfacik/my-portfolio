@@ -6,6 +6,7 @@
 - SASS
 - Framer Motion
 - React Scroll
+- EmailJs
 
 ## Link
 - https://ekremufacik.netlify.app/
