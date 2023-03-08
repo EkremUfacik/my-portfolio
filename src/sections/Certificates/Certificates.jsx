@@ -3,6 +3,8 @@ import "./Certificates.scss";
 import certificatesList from "../../assets/certificates/certificates";
 import { motion } from "framer-motion";
 import { useThemeContext } from "../../context/ThemeProvider";
+import { FcNext } from "react-icons/fc";
+import { FcPrevious } from "react-icons/fc";
 
 const Certificates = () => {
   const [current, setCurrent] = useState(4);
@@ -36,11 +38,11 @@ const Certificates = () => {
           ></motion.div>
         ))}
 
-        <div className="prev" onClick={handlePrev}>
-          ◀
+        <div className="prev app__flex" onClick={handlePrev}>
+          <FcPrevious />
         </div>
-        <div className="next" onClick={handleNext}>
-          ▶
+        <div className="next app__flex" onClick={handleNext}>
+          <FcNext />
         </div>
       </motion.div>
 
