@@ -5,10 +5,16 @@ import reduxlogo from "../assets/skillsImg/redux.png";
 import tslogo from "../assets/skillsImg/typescript.png";
 import { AiFillEye } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Project = ({ project }) => {
   return (
-    <div id="projects" className="project">
+    <motion.div
+      id="projects"
+      className="project"
+      whileInView={{ opacity: [0, 1], x: [-100, 0] }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+    >
       <div className="project-info">
         <img src={jslogo} alt="" />
         {project.tech.includes("React") && <img src={reactlogo} alt="" />}
@@ -32,7 +38,7 @@ const Project = ({ project }) => {
         </a>
       </div>
       <p className="project-name">{project.name}</p>
-    </div>
+    </motion.div>
   );
 };
 

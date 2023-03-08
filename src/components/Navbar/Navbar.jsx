@@ -19,7 +19,7 @@ const Navbar = () => {
         backgroundColor:
           theme === "light"
             ? "rgba(242, 242, 242, 0.355)"
-            : "rgba(0, 0, 0, 0.19)",
+            : "rgba(0, 0, 0, 0.301)",
       }}
     >
       <div className="app__navbar-logo app__flex">

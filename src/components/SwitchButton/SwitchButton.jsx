@@ -22,7 +22,10 @@ const SwitchButton = () => {
       <label
         htmlFor="checkbox"
         className="label"
-        style={{ backgroundColor: theme === "light" ? "#5b6770" : "black" }}
+        style={{
+          backgroundColor: theme === "light" ? "#5b6770" : "black",
+          cursor: "pointer",
+        }}
       >
         <MdDarkMode className="dark" />
         <BsSun className="sun" />

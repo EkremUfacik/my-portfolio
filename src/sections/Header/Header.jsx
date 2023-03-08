@@ -8,11 +8,19 @@ import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 
 const scaleVariants = {
   whileInView: {
-    scale: [0, 1],
+    scale: [0.5, 1],
     opacity: [0, 1],
     transition: {
-      duration: 1,
-      ease: "easeInOut",
+      default: {
+        duration: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      },
+      scale: {
+        type: "spring",
+        damping: 5,
+        stiffness: 80,
+        restDelta: 0.001,
+      },
     },
   },
 };
@@ -65,6 +73,7 @@ const Header = () => {
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
+          // transition={{ type: "spring", stiffness: 100 }}
           className="app__header-circles"
         >
           <div className="circle-cmp app__flex">

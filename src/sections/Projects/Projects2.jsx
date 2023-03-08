@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Projects2.scss";
-import { motion } from "framer-motion";
 import projectsImg from "../../assets/projectsImg/projects";
 import Project from "../../components/Project";
 
@@ -34,15 +33,11 @@ const Projects2 = () => {
         ))}
       </ul>
 
-      <motion.div
-        className="app__projects-contain app__flex"
-        whileInView={{ opacity: [0, 1], x: [-200, 0] }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
+      <div className="app__projects-contain app__flex">
         {filteredList.map((project, index) => (
           <Project key={index} project={project} />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

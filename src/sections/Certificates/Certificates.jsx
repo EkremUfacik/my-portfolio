@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Certificates.scss";
 import certificatesList from "../../assets/certificates/certificates";
 import { motion } from "framer-motion";
+import { useThemeContext } from "../../context/ThemeProvider";
 
 const Certificates = () => {
   const [current, setCurrent] = useState(4);
+  const { theme } = useThemeContext();
 
   const handlePrev = () => {
     current === 0
@@ -49,6 +51,7 @@ const Certificates = () => {
             style={{
               opacity: current === index ? "0.9" : "",
               scale: current === index ? "1.2" : "",
+              backgroundColor: theme === "dark" ? "white" : "black",
             }}
             key={index}
             onClick={() => setCurrent(index)}

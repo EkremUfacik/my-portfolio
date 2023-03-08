@@ -1,10 +1,20 @@
 import React from "react";
 import "./Footer.scss";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
+import { useThemeContext } from "../../context/ThemeProvider";
 
 const Footer = () => {
+  const { theme } = useThemeContext();
   return (
-    <footer className="app__footer app__flex">
+    <footer
+      className="app__footer app__flex"
+      style={{
+        backgroundColor:
+          theme === "light"
+            ? "rgba(200, 202, 211, 0.655)"
+            : "rgba(8, 11, 28, 0.66)",
+      }}
+    >
       <ul className="app__footer-social app__flex">
         <li>
           <a href="https://www.linkedin.com/in/ekrem-ufacik/">
