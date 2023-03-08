@@ -11,4 +11,4 @@
 - https://ekremufacik.netlify.app/
 
 ## Screenshot
-<img src="assets/portfolio.png" alt="user" style="zoom: 200%;" />
+<img src="src/assets/portfolio.png" alt="user" style="zoom: 200%;" />
